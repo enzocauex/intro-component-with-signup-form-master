@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+  </head>
+  <body>
+    <main class="animate-appear">
+      <div class="container">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <section class="login-trial">
+        <button id="price_btn">
+          <strong>Try it free 7 days</strong> then $20/mo. thereafter
+        </button>
+
+        <form class="form" action="">
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="First Name"
+            autofocus
+          />
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="Last Name"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            autocomplete="email"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+
+          <button id="free-trial_btn">Claim your free trial</button>
+
+          <p>
+            By clicking the button, you are agreeing to our
+            <a href="#"><strong>Terms and Services</strong></a>
+          </p>
+        </form>
+      </section>
+    </main>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

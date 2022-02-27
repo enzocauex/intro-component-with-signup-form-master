@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;  /* 10 pixels no root*/
+}
+
+body {
+    background: url('../images/bg-intro-desktop.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(0, 100%, 74%);
+    font-size: 1.6rem;
+    color: white;
+}
+
+main {
+    height: 100vh;
+    width: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: auto;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 5rem;
+    width: 430px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.container p {
+    padding-top: 30px;
+}
+
+section {
+    width: 40%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 18px;
+    padding: 30px 20px;
+
+    width: 100%;
+    height: 400px;
+
+    background-color: white;
+    border-radius: .6rem;
+    box-shadow: 0 5px rgba(56, 42, 225, 0.2);
+}
+
+input {
+    height: 45px;
+    border: 1.8px solid hsl(246, 25%, 77%);
+    border-radius: .6rem;
+
+    font-weight: 600;
+    color:hsl(249, 10%, 26%);
+    padding-left: 20px;
+}
+
+section p {
+    font-size: 10px;
+    color: hsl(246, 25%, 77%);
+    
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+section p strong {
+    color: hsl(0, 100%, 74%);
+}
+
+/* Botões*/
+button {
+    height: 45px;
+    color: white;
+    
+    border-radius: .6rem;
+    border: none;
+
+    cursor: pointer;
+}
+
+#price_btn {
+    width: 100%;
+    background: hsl(248, 32%, 49%);
+    box-shadow: 0 3px rgba(56, 42, 225, 0.2);
+}
+
+#free-trial_btn {
+    background: hsl(154, 59%, 51%);   
+    box-shadow: 0 2px hsl(154, 55%, 27%);
+    font-weight: 700;
+}
+
+    /*Focus*/
+input:focus {
+    outline-color:hsl(248, 32%, 49%);
+}
