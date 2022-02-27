@@ -8,13 +8,13 @@
 }
 
 :root {
-    font-size: 62.5%;  /* 10 pixels no root*/
+    font-size: 62.5%;  /* 10 pixels on root*/
 }
 
 body {
     background: url('../images/bg-intro-desktop.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     background-color: hsl(0, 100%, 74%);
     font-size: 1.6rem;
     color: white;
@@ -50,7 +50,8 @@ h1 {
 }
 
 section {
-    width: 40%;
+    width: 47%;
+    height: 44rem;
 }
 
 form {
@@ -58,11 +59,11 @@ form {
     flex-direction: column;
     justify-content: space-between;
 
-    margin-top: 18px;
+    margin-top: 1.7rem;
     padding: 30px 20px;
 
     width: 100%;
-    height: 400px;
+    height: 44rem;
 
     background-color: white;
     border-radius: .6rem;
@@ -70,7 +71,7 @@ form {
 }
 
 input {
-    height: 45px;
+    height: 5rem;
     border: 1.8px solid hsl(246, 25%, 77%);
     border-radius: .6rem;
 
