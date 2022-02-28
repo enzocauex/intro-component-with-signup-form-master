@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Frontend Mentor | Intro component with sign up form</title>
-
   </head>
   <body>
     <main class="animate-appear">
@@ -34,32 +33,47 @@
         </button>
 
         <form class="form" action="">
-          <input
-            type="text"
-            name="first-name"
-            id="first-name"
-            placeholder="First Name"
-            autofocus
-          />
-          <input
-            type="text"
-            name="last-name"
-            id="last-name"
-            placeholder="Last Name"
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-            autocomplete="email"
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-          />
+          <div class="form_input">
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="First Name"
+              autofocus
+            />
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+
+          <div class="form_input">
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Last Name"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+
+          <div class="form_input">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              autocomplete="email"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+
+          <div class="form_input">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
 
           <button id="free-trial_btn">CLAIM YOUR FREE TRIAL</button>
 
@@ -70,6 +84,10 @@
         </form>
       </section>
     </main>
+    <script
+      src="https://kit.fontawesome.com/137b8d932f.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="scripts/index.js"></script>
   </body>
 </html>
