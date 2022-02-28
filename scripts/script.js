@@ -1,3 +1,5 @@
+const { format } = require("path/posix");
+
 const form = document.getElementById('form');
 const firstName = document.getElementById('first-name');
 const lastName = document.getElementById('last-name');
@@ -30,6 +32,7 @@ function checkInputs() {
 
 function setErrorFor(input, message) {
     const formInput = input.parentElement;
+    // const small = formInput.querySelector('small')
 
     formInput.className = "form_input error";
 }
