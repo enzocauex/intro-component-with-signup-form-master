@@ -138,11 +138,20 @@ input:focus {
 }
 
     /* error and success */
-.form_input.error input {
-    /* outline-color: hsl(0, 100%, 74%); */
+.form_input.error input:focus-visible {
+    outline-color: hsl(0, 100%, 74%);
 }
 
 .form_input.error i.fa-exclamation-circle {
     visibility: visible;
     color: hsl(0, 100%, 74%);
+}
+
+.form_input.success input:focus-visible {
+    outline-color: #2ecc71;
+}
+
+.form_input.success i.fa-exclamation-circle {
+    visibility: visible;
+    color: #2ecc71;
 }
