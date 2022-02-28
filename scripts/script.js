@@ -1,5 +1,3 @@
-const { format } = require("path/posix");
-
 const form = document.getElementById('form');
 const firstName = document.getElementById('first-name');
 const lastName = document.getElementById('last-name');
@@ -24,15 +22,20 @@ function checkInputs() {
     }
 
     if (lastNameValue === "") {
-        setErrorFor(lastName, "Last name is required.")
+        setErrorFor(lastName, "Last name is required.");
     } else {
-        setSuccessFor(lastName)
+        setSuccessFor(lastName);
+    }
+
+    if (emailValue === "") {
+        setErrorFor(email, "Email is required.");
+    } else {
+        setSuccessFor(email);
     }
 }
 
 function setErrorFor(input, message) {
     const formInput = input.parentElement;
-    // const small = formInput.querySelector('small')
 
     formInput.className = "form_input error";
 }
