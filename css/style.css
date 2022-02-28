@@ -72,12 +72,18 @@ form {
 
 input {
     height: 5rem;
+    width: 100%;
+
     border: 1.8px solid hsl(246, 25%, 77%);
     border-radius: .6rem;
 
     font-weight: 600;
     color:hsl(249, 10%, 26%);
     padding-left: 20px;
+}
+
+.form_input {
+    position: relative;
 }
 
 section p {
@@ -89,6 +95,14 @@ section p {
 
 a {
     text-decoration: none;
+}
+
+.form_input i {
+    position: absolute;
+    top: 17px;
+    right: 10px;
+
+    visibility: hidden;
 }
 
 section p strong {
@@ -121,4 +135,14 @@ button {
     /* focus*/
 input:focus {
     outline-color:hsl(248, 32%, 49%);
+}
+
+    /* error and success */
+.form_input.error input {
+    /* outline-color: hsl(0, 100%, 74%); */
+}
+
+.form_input.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: hsl(0, 100%, 74%);
 }
