@@ -45,9 +45,13 @@ function checkInputs() {
 
 function setErrorFor(input, message) {
     const formInput = input.parentElement;
+    const small = formInput.querySelector("small");
 
     // add class name error
     formInput.className = "form_input error";
+
+    // add error message
+    small.innerText = message;
 }
 
 function setSuccessFor(input) {

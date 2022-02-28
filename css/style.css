@@ -95,6 +95,14 @@ a {
     text-decoration: none;
 }
 
+.form_input small {
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+
+    visibility: hidden;
+}
+
 .form_input i {
     position: absolute;
     top: 17px;
@@ -145,11 +153,19 @@ input:focus {
     color: hsl(0, 100%, 74%);
 }
 
+.form_input.error small {
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+    color: hsl(0, 100%, 74%);
+    visibility: visible;
+}
+
 .form_input.success input:focus-visible {
     outline-color: #2ecc71;
 }
 
-.form_input.success i.fa-exclamation-circle {
+.form_input.success i.fa-check-circle {
     visibility: visible;
     color: #2ecc71;
 }
