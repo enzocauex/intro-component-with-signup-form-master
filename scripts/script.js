@@ -17,13 +17,13 @@ function checkInputs() {
     // const passwordConfirmationValue = passwordConfirmation.value;
 
     if (firstNameValue === "") {
-        setErrorFor(firstName, "First name is required.");
+        setErrorFor(firstName, "First Name cannot be empty");
     } else {
         setSuccessFor(firstName);
     }
 
     if (lastNameValue === "") {
-        setErrorFor(lastName, "Last name is required.");
+        setErrorFor(lastName, "Last Name cannot be empyt");
     } else {
         setSuccessFor(lastName);
     }
@@ -31,13 +31,13 @@ function checkInputs() {
     if (emailValue === "") {
         setErrorFor(email, "Email is required.");
     } else if (!checkEmail(emailValue)) {
-        setErrorFor(email, "Please, enter a valid email.");
+        setErrorFor(email, "Looks like this is not an email");
     } else {
         setSuccessFor(email);
     }
 
     if (passwordValue === "") {
-        setErrorFor(password, "Incorrect password.");
+        setErrorFor(password, "Password cannot be empty");
     } else {
         setSuccessFor(password);
     }
@@ -46,12 +46,14 @@ function checkInputs() {
 function setErrorFor(input, message) {
     const formInput = input.parentElement;
     const small = formInput.querySelector("small");
+    // const placeholderValue = input.getAttribute("placeholder");
 
     // add class name error
     formInput.className = "form_input error";
 
     // add error message
     small.innerText = message;
+
 }
 
 function setSuccessFor(input) {
