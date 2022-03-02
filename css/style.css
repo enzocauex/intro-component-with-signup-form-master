@@ -73,8 +73,11 @@ form {
 
 .form_input small {
     position: absolute;
-    bottom: -20px;
-    right: 10px;
+    bottom: -15px;
+    right: 0;
+
+    font-size: .8rem;
+    font-weight: 500;
 
     visibility: hidden;
 }
@@ -167,10 +170,9 @@ input:focus {
 
 .form_input.error small {
     position: absolute;
-    bottom: -20px;
-    right: 10px;
-    color: hsl(0, 100%, 74%);
     visibility: visible;
+    
+    color: hsl(0, 100%, 74%);
 }
 
 .form_input.success input:focus-visible {
@@ -181,3 +183,7 @@ input:focus {
     visibility: visible;
     color: #2ecc71;
 }
+
+/* small {
+    font-size: .6rem;
+} */
