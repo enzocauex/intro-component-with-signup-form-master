@@ -41,12 +41,12 @@ function checkInputs() {
     } else {
         setSuccessFor(password);
     }
+
 }
 
 function setErrorFor(input, message) {
     const formInput = input.parentElement;
     const small = formInput.querySelector("small");
-    // const placeholderValue = input.getAttribute("placeholder");
 
     // add class name error
     formInput.className = "form_input error";
