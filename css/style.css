@@ -11,8 +11,7 @@
 
 body {
     background: url('../images/bg-intro-desktop.png') no-repeat;
-    background-size: auto;
-    /* background-size: contain; */
+    background-size: cover;
     background-color: hsl(0, 100%, 74%);
     font-size: 1.3rem;
     color: white;
@@ -191,6 +190,45 @@ input:focus {
     color: #2ecc71;
 }
 
-/* small {
-    font-size: .6rem;
-} */
+/* desktop version*/
+@media (min-width: 760px) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    main {
+        padding: 0 4rem;;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container {
+        height: 20rem;
+        margin: 0;
+    }
+
+    h1 {
+        width: 45rem;
+        margin: 0;
+
+        text-align: initial;
+        font-size: 5rem;
+    }
+
+    .container p {
+        width: 55rem;
+
+        padding-top: 4rem;
+        text-align: initial;
+    }
+
+    section {
+        width: 80rem;
+    }
+
+    /* buttons */
+
+    #price_btn {
+        height: 5rem;
+    }
+}
