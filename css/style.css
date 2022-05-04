@@ -38,18 +38,16 @@ main {
 }
 
 h1 {
-    font-size: 2.5rem;
     width: 90%;
+    margin: 35px auto 0;
+    
     font-weight: 700;
     line-height: 1;
-
-    text-align: center;
-    margin: 35px auto 0;
+    font-size: 2.5rem;
 }
 
 main p {
     padding-top: 2rem;
-    text-align: center;
     height: 11.5rem;
 }
 
@@ -221,8 +219,6 @@ input:focus {
     section {
         width: 80rem;
     }
-
-    /* buttons */
 
     #price_btn {
         height: 5rem;
