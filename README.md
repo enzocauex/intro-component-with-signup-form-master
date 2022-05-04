@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [frontend Mentor](https://www.frontendmentor.io/solutions/responsive-landing-page-using-flexbox-and-javascript-zKTTR7C3W)
 - Live Site URL: [Website in Vercel](https://intro-component-with-signup-form-master-red.vercel.app/)
 
 ## My process
