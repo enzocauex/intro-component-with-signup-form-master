@@ -53,7 +53,6 @@ function setErrorFor(input, message) {
 
     // add error message
     small.innerText = message;
-
 }
 
 function setSuccessFor(input) {
