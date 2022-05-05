@@ -49,7 +49,7 @@ function setErrorFor(input, message) {
     const small = formInput.querySelector("small");
 
     // add class name error
-    formInput.className = "form_input error";
+    formInput.className = "input-wrapper error";
 
     // add error message
     small.innerText = message;
@@ -62,7 +62,7 @@ function setSuccessFor(input) {
     const formInput = input.parentElement;
 
     // add class name success
-    formInput.className = "form_input success"
+    formInput.className = "input-wrapper success"
 }
     //email validation
 function checkEmail(email) {
