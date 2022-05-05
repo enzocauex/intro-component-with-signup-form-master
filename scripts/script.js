@@ -53,6 +53,9 @@ function setErrorFor(input, message) {
 
     // add error message
     small.innerText = message;
+
+    // remove placeholder
+    input.removeAttribute('placeholder');
 }
 
 function setSuccessFor(input) {
